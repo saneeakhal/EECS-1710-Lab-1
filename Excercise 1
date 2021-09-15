@@ -1,0 +1,16 @@
+color bgColor = color(255);
+
+void setup() {
+  size(800, 600, P2D); // P2D enables 2D GPU acceleration
+  background(bgColor);
+}
+
+void draw() {  
+  if (mousePressed) {
+    rectMode(CENTER);
+    fill(204, 229, 255);
+    noStroke();
+    line(mouseX, mouseY, pmouseX, pmouseY);
+    circle (mouseX, mouseY, 220);
+  }
+}
