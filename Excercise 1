@@ -9,8 +9,10 @@ void draw() {
   if (mousePressed) {
     rectMode(CENTER);
     fill(204, 229, 255);
-    noStroke();
+    stroke(0);
     line(mouseX, mouseY, pmouseX, pmouseY);
     circle (mouseX, mouseY, 220);
   }
+  rect (mouseX, mouseY, 110, 80);
+  fill (178, 102, 255);
 }
